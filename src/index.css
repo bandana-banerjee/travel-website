@@ -73,6 +73,7 @@ a {
 }
 
 img:not(.nav-logo) {
+  
   width: 100%;
   display: block;
 }
@@ -543,6 +544,7 @@ Navbar
   width: 90vw;
   max-width: 1170px;
   margin: 0 auto;
+  
 }
 
 .nav-header {
@@ -608,6 +610,10 @@ Navbar
   }
 
   .nav-center {
+    position: fixed;
+    padding-left: 10rem;
+    
+    padding-top: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -653,7 +659,8 @@ Navbar
 
 .slick-container {
   margin: 0 auto;
-  width: 90vw;
+  /* margin-top:  4rem; */
+  width: 100vw;
   text-align: center;
   /* display: flex;
   justify-content: center;
@@ -671,4 +678,27 @@ Navbar
 
 .slick-next::before {
   color: black !important;
+  
+}
+.slick-next{
+  position: absolute;
+  right: 80px !important;
+   transform: translate(0, -50%);
+  z-index: 1; 
+}
+.slick-prev{
+position: absolute;
+  left: 80px !important;
+  transform: translate(0, -50%);
+   z-index: 1; 
+}
+
+.slick-dots li{
+  bottom:40px;
+}
+.slick-dots li button{
+  font-size: 20px;
+}
+.slick-dots li.slick-active button:before{
+  font-size: 10px;
 }

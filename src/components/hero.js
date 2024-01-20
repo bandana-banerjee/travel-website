@@ -14,8 +14,8 @@ function hero() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
-    pauseOnHover: true,
+    autoplaySpeed: 800,
+    // pauseOnHover: true,
   };
   return (
     <section className="slick-container" id="home">

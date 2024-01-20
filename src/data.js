@@ -2,6 +2,7 @@ import tour1 from './images/hero1.jpeg';
 import tour2 from './images/hero2.jpeg';
 import tour3 from './images/hero3.jpeg';
 import tour4 from './images/hero4.jpeg';
+import tour5 from './images/hero5.jpeg';
 
 export const pageLinks = [
   { id: 1, href: '#home', text: 'home' },
@@ -86,5 +87,9 @@ export const list = [
   {
     id: 4,
     image: tour4
+  },
+   {
+    id: 5,
+    image: tour5
   }
 ];
