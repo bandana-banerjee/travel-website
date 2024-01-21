@@ -564,6 +564,7 @@ Navbar
   color: var(--clr-primary-5);
   cursor: pointer;
   transition: var(--transition);
+  margin-bottom: 40px;
 }
 
 .nav-toggle:hover {
