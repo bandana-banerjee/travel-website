@@ -54,7 +54,7 @@ export const Tours = [
   },
   {
     id: 2,
-    image: tour2,
+    image: tour3,
     date: 'Season Offer 2024',
     title: 'Honeymoon Tour Package',
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
@@ -65,7 +65,7 @@ export const Tours = [
   },
   {
     id: 3,
-    image: tour3,
+    image: tour2,
     date: 'Season Offer 2024',
     title: 'Group Tour Package',
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
