@@ -775,6 +775,7 @@ body.active-modal {
   display: inline-block;
   width: 70px;
   margin: 0;
+  padding-left: 10px;
   
   
 }
