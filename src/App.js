@@ -18,7 +18,7 @@ function App() {
       <Footer />
       <div class="fixed-bottom right-100 p-3" style={{zIndex:"6",left:"initial"}}>
         <a href="https://wa.me/8327066455?text=Hello How may I help you?">
-          <img src={whatsapp} style={{width:'140px'}}/>
+          <img class='whatsapp'src={whatsapp} style={{width:'140px'}}/>
         </a>
       </div>
     </>

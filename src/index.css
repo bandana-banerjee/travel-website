@@ -702,3 +702,17 @@ position: absolute;
 .slick-dots li.slick-active button:before{
   font-size: 10px;
 }
+.whatsapp{
+animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat{
+  0% {
+    transform:scale(1);
+  }
+   50% {
+    transform:scale(1.2);
+  }
+   100% {
+    transform:scale(1);
+  }
+}
