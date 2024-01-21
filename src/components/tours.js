@@ -27,7 +27,7 @@ return(
                 <span><i className="fas fa-map"></i></span>{location}
               </p>
               <p>{duration} days</p>
-              <p>from ${cost}</p>
+              <p>₹{cost}</p>
             </div>
           </div>
         </article>)

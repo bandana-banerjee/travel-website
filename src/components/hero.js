@@ -1,6 +1,6 @@
 
 import Slider from "react-slick";
-import React, { Component } from "react";
+import React from "react";
 //import { baseUrl } from "./config";
 import { list } from '../data'
 import "slick-carousel/slick/slick.css";
@@ -15,7 +15,7 @@ function hero() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 800,
-    // pauseOnHover: true,
+    pauseOnHover: false,
   };
   return (
     <section className="slick-container" id="home">
@@ -23,7 +23,7 @@ function hero() {
         {list.map((person) => {
           const { id, image } = person;
           return <div key={id} >
-            <img src={image} />
+            <img src={image} alt='abc'/>
           </div>
         })}
       </Slider>
