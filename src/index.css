@@ -776,10 +776,11 @@ body.active-modal {
   width: 70px;
   margin: 0;
   padding-left: 10px;
-  
-  
 }
+
+
 .contact img{
   width: 70px;
   animation: heartbeat 1s infinite;
+  
 }

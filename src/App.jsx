@@ -26,7 +26,7 @@ function App() {
           <img className='whatsapp' src={whatsapp} style={{ width: '140px' }} alt="abc" />
         </a>
       </div>
-      <button className='contact fixed-bottom ' onClick={toggleModal} >
+      <button className='contact fixed-bottom ' onClick={toggleModal} style={{ zIndex: "6", right: "initial" }}>
         <img src={contactus} alt="abc" />
       </button>
       {modal && (
