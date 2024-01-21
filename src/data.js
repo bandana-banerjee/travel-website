@@ -14,7 +14,7 @@ export const pageLinks = [
   { id: 4, href: '#tours', text: 'tour' },
   { id: 5, href: '#', text: 'Islands' },
   { id: 6, href: '#', text: 'Sightseeing' },
-  { id: 7, href: '#', text: 'Contact Us' },
+  
 ];
 
 export const socialLinks = [
