@@ -544,8 +544,8 @@ Navbar
 }
 
 .nav-center {
-  width: 90vw;
-  max-width: 1170px;
+  width: 100%;
+  /* max-width: 1170px; */
   margin: 0 auto;
   
 }
@@ -617,8 +617,7 @@ Navbar
 
   .nav-center {
     position: fixed;
-    padding-left: 10rem;
-    
+    padding: 0 5rem;    
     padding-top: 5px;
     display: flex;
     justify-content: space-between;
