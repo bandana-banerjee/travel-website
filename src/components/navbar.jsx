@@ -22,6 +22,7 @@ const Navbar = () => {
                 <a href={link.href} className="nav-link"> {link.text} </a>
               </li>
             })}
+            <button className='btn-contact'>Contact us</button>
 
           </ul>
 
