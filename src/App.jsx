@@ -8,6 +8,7 @@ import Footer from './components/footer';
 import whatsapp from './images/whatsapp.png'
 import { useState } from 'react'
 import contactus from './images/contactus.png'
+import Modal from "./Modal";
 function App() {
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Modal />
       <Hero />
       <About />
       <Services />
