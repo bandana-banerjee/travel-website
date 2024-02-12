@@ -24,7 +24,7 @@ function App() {
       <Tour />
       <Footer />
       <div className="fixed-bottom right-100 p-3" style={{ zIndex: "6", left: "initial" }}>
-        <a href="https://wa.me/918327066455?text=I am planning to visit Andaman Islands">
+        <a href="https://wa.me/919476096915?text=I am planning to visit Andaman Islands">
           <img className='whatsapp' src={whatsapp} style={{ width: '140px' }} alt="abc" />
         </a>
       </div>
