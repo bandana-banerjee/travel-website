@@ -9,6 +9,7 @@ import whatsapp from './images/whatsapp.png'
 import { useState } from 'react'
 import contactus from './images/contactus.png'
 import Modal from "./Modal";
+// import { ToastContainer, toast } from 'react-toastify'
 function App() {
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
@@ -23,6 +24,7 @@ function App() {
       <Services />
       <Tour />
       <Footer />
+
       <div className="fixed-bottom right-100 p-3" style={{ zIndex: "6", left: "initial" }}>
         <a href="https://wa.me/919476096915?text=I am planning to visit Andaman Islands">
           <img className='whatsapp' src={whatsapp} style={{ width: '140px' }} alt="abc" />
