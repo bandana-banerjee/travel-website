@@ -1,14 +1,18 @@
-// import React, { useState } from 'react'
+
 import { FaTimes } from 'react-icons/fa'
 import { useGlobalContext } from './Context'
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 const Modal = () => {
     const { isModalOpen, closeModal } = useGlobalContext()
-
+    const [formData, setFormData] = useState({
+        user_name: '',
+        user_email: '',
+        message: ''
+    });
     // const [phoneNumber, setPhoneNumber] = useState('');
     // const handleChange = (e) => {
     //     const input = e.target.value.replace(/\D/g, ''); // Remove non-digit characters
@@ -16,7 +20,13 @@ const Modal = () => {
     //         setPhoneNumber(input);
     //     }
     // };
-
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -29,12 +39,18 @@ const Modal = () => {
             .then(
                 () => {
                     toast.success('Form Submitted!');
+                    setFormData({
+                        user_name: '',
+                        user_email: '',
+                        message: ''
+                    });
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
                 },
             );
     };
+
 
     return (
 
@@ -51,14 +67,14 @@ const Modal = () => {
                             <label htmlFor='name' className='form-label'>
                                 Name:
                             </label>
-                            <input type='text' className='form-input' id='name' name="user_name" placeholder="Enter Your Name" />
+                            <input type='text' className='form-input' id='name' name="user_name" placeholder="Enter Your Name" onChange={handleChange} value={formData.user_name} />
                         </div>
                         {/* email */}
                         <div className='form-row'>
                             <label htmlFor='email' className='form-label'>
                                 Email:
                             </label>
-                            <input type='email' className='form-input' id='email' name='user_email' placeholder="Enter Email Address" />
+                            <input type='email' className='form-input' id='email' name='user_email' placeholder="Enter Email Address" onChange={handleChange} value={formData.user_email} />
                         </div>
                         {/* email */}
                         <div className='form-row'>
@@ -71,7 +87,7 @@ const Modal = () => {
                                 onChange={handleChange}
                                 placeholder="Enter 10 digits" /> */}
                             <label className='form-label'>Message:</label>
-                            <textarea name="message" className='form-input' placeholder="Type Your Query" />
+                            <textarea name="message" className='form-input' placeholder="Type Your Query" onChange={handleChange} value={formData.message} />
                         </div>
 
                         <button type='submit' className='btn btn-block' value="Send">
