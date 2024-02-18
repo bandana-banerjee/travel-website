@@ -31,25 +31,32 @@ const Modal = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs
-            .sendForm('service_oo0juvs', 'template_fwu54gs', form.current, {
-                publicKey: 'aQ-OFcZomZUF3SfJn',
-            })
-            .then(
-                () => {
-                    toast.success('Form Submitted!');
-                    setFormData({
-                        user_name: '',
-                        user_email: '',
-                        message: ''
-                    });
-                },
-                (error) => {
-                    console.log('FAILED...', error.text);
-                },
-            );
-    };
+        const isEmpty = Object.values(formData).some((value) => value === '');
+        if (isEmpty) {
+            toast.error('please provide a value')
+            return
+        }
+        else {
+            emailjs
+                .sendForm('service_oo0juvs', 'template_fwu54gs', form.current, {
+                    publicKey: 'aQ-OFcZomZUF3SfJn',
+                })
+                .then(
+                    () => {
+                        toast.success('Form Submitted!');
+                        setFormData({
+                            user_name: '',
+                            user_email: '',
+                            message: ''
+                        });
+                    },
+                    (error) => {
+                        toast.error('Invalid Inputs !');
+                        console.log('FAILED...', error.text);
+                    },
+                );
+        };
+    }
 
 
     return (
