@@ -1,4 +1,4 @@
-import { memo } from "react"
+
 
 
 const title = ({title,subtitle}) => {
@@ -9,4 +9,4 @@ const title = ({title,subtitle}) => {
   )
 }
 
-export default memo(title)
+export default title

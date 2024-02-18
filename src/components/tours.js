@@ -1,4 +1,4 @@
-import { memo } from 'react';
+
 import {Tours} from '../data';
 import Title from './title';
 
@@ -42,4 +42,4 @@ return(
   )
 }
 
-export default memo(tours)
+export default tours

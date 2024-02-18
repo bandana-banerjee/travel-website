@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+
 import aboutImg from '../images/about.jpeg';
 import Title from './title';
 
@@ -35,4 +35,4 @@ const about = () => {
   )
 }
 
-export default memo(about)
+export default about

@@ -1,4 +1,4 @@
-import { memo } from "react";
+
 import { pageLinks,socialLinks } from "../data"
 
 const footer = () => {
@@ -39,4 +39,4 @@ return(
   )
 }
 
-export default memo(footer)
+export default footer

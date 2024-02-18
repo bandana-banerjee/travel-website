@@ -1,7 +1,7 @@
 
 import Title from './title';
 import {Services} from '../data'
-import { memo } from 'react';
+
 
 const services = () => {
   return (
@@ -30,4 +30,4 @@ const services = () => {
   );
 };
 
-export default memo(services)
+export default services
