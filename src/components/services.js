@@ -1,6 +1,8 @@
 
 import Title from './title';
 import {Services} from '../data'
+import { memo } from 'react';
+
 const services = () => {
   return (
     <section className="section services" id="services">
@@ -28,4 +30,4 @@ const services = () => {
   );
 };
 
-export default services
+export default memo(services)

@@ -1,5 +1,7 @@
+import { memo } from 'react';
 import {Tours} from '../data';
 import Title from './title';
+
 const tours = () => {
   return (
     <section className="section" id="tours">
@@ -40,4 +42,4 @@ return(
   )
 }
 
-export default tours
+export default memo(tours)

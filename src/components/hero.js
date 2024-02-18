@@ -1,6 +1,6 @@
 
 import Slider from "react-slick";
-import React from "react";
+import React,{memo} from "react";
 //import { baseUrl } from "./config";
 import { list } from '../data'
 import "slick-carousel/slick/slick.css";
@@ -31,7 +31,7 @@ function hero() {
   )
 }
 
-export default hero;
+export default memo(hero);
 //  <section className="hero" id="home">
 //       <div className="hero-banner">
 //         {/* <h1>continue exploring</h1>

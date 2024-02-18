@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import aboutImg from '../images/about.jpeg';
 import Title from './title';
+
 const about = () => {
   return (
     <section className="section" id="about">
@@ -34,4 +35,4 @@ const about = () => {
   )
 }
 
-export default about
+export default memo(about)
